@@ -6,7 +6,7 @@ class A{
     std::size_t a_;
     public:
         A(std::size_t a);
-        auto func();
+	std::size_t func();
         
 };
 

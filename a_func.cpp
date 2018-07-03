@@ -1,14 +1,11 @@
 #include "a.hpp"
 // a_func.cpp
-template<>
-auto A<2>::func()
+template<std::size_t dim>
+std::size_t A<dim>::func()
 {
-    return a_;
+    return a_+dim;
 }
 
-template<>
-auto A<3>::func()
-{
-    return a_+ 1;
-}
 
+template class A<2>;
+template class A<3>;
